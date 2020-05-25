@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app >
+    <!--<servlet>
+        <description>
+        </description>
+        <display-name>indexAdmin</display-name>
+        <servlet-name>indexAdmin</servlet-name>
+        <jsp-file>/WEB-INF/indexAdmin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexAdmin</servlet-name>
+        <url-pattern>/indexAdmin</url-pattern>
+    </servlet-mapping>-->
+
+
+    <context-param>
+        <param-name>DataBaseURL</param-name>
+        <param-value>jdbc:mysql://localhost/pwjava</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DataBaseUser</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DataBasePassword</param-name>
+        <param-value></param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>webapp.model.ApplicationManagement</listener-class>
+    </listener>
+
+</web-app>
